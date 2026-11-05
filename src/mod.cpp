@@ -326,7 +326,6 @@ void enter_guard_state(TN* t, const fopAc_ac_c* plr) {
         if (t->mAtInfo.mpCollider == nullptr) {
             t->mAtInfo.mpCollider = &t->mSwordSphs[0];
         }
-        t->mGuardCounterKick = false;
         enter(t, TN::ACT_GUARDL, TN::ACTION2_0_e);
     }
 }
